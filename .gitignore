@@ -41,4 +41,4 @@ typings/globals
 typings/modules
 
 # Destination Directory
-dist
+dist/*.*
