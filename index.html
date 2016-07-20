@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="http://cdn.staticfile.org/systemjs/0.18.4/system.js"></script>
+</head>
+<body>
+    <script>
+        System.config({
+            packages:{
+                "dist":{
+                    "defaultExtension":"js",
+                    "main":"HelloWorld"
+                },
+                "rxjs":{
+                    "defaultExtension":"js",
+                    "main":"Rx.js"
+                },
+                "symbol-observable":{
+                    "defaultExtension":"js",
+                    "main":"index.js"
+                }
+            },
+            map:{
+                "lodash":"http://cdn.staticfile.org/lodash.js/3.10.1/lodash.min.js",
+                "rxjs":"node_modules/rxjs",
+                "symbol-observable":"node_modules/symbol-observable"
+            }
+        });
+        System.import("dist");
+    </script>
+</body>
+</html>
